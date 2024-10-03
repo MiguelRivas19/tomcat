@@ -1,4 +1,4 @@
-FROM tomcat
+FROM tomcat:8.5.100-jdk17
 RUN cp -r /usr/local/tomcat/webapps.dist/* /usr/local/tomcat/webapps/
 
 RUN sed -i 's/<\/tomcat-users>//g' /usr/local/tomcat/conf/tomcat-users.xml
